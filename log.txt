@@ -1,0 +1,26 @@
++++++++++++++++++++++++++++++++++++++++++++++
+++++挖财签到有礼06.27 15:55:23 每天签到得铜钱++++
++++++++++++++++++++++++++++++++++++++++++++++
+Successfully login 06.27 15:55:39.
+Successfully find the checkin forum ID 06.27 15:55:39.
+Successfully find the theard ID 06.27 15:55:39.
+Successfully find the key word 06.27 15:55:39 .
+Fail to reply: 06.27 15:55:39<?xml version="1.0" encoding="utf-8"?>
+<root><![CDATA[对不起，你已经达到本主题的回帖上限。<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('对不起，你已经达到本主题的回帖上限。', {});}</script>]]></root> .
+Successfully find my WaCai link 06.27 15:55:39 .
+Successfully find my info link 06.27 15:55:39 .
+Successfully get my coin amount 06.27 15:55:39: 413 .
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++挖财签到有礼06.27 16:01:47 每天签到得铜钱++++
++++++++++++++++++++++++++++++++++++++++++++++
+Successfully login 06.27 16:02:03.
+Successfully find the checkin forum ID 06.27 16:02:03.
+Successfully find the thread ID 06.27 16:02:03.
+Successfully find the key word 06.27 16:02:03 .
+Fail to reply: 06.27 16:02:03<?xml version="1.0" encoding="utf-8"?>
+<root><![CDATA[对不起，你已经达到本主题的回帖上限。<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('对不起，你已经达到本主题的回帖上限。', {});}</script>]]></root> .
+Successfully find my WaCai link 06.27 16:02:03 .
+Successfully find my info link 06.27 16:02:03 .
+Successfully get my coin amount 06.27 16:02:04: 413 .
+
