@@ -1,39 +1,131 @@
-+++++++++++++++++++++++++++++++++++++++++++++
-++++挖财签到有礼06.28 19:27:27 每天签到得铜钱++++
-+++++++++++++++++++++++++++++++++++++++++++++
-06.28 19:27:42--Successfully login.
-06.28 19:27:42--Successfully find the checkin forum ID.
-06.28 19:27:42--Successfully find the thread ID.
-06.28 19:27:42--Successfully find the key word.
-06.28 19:27:42--Fail to reply: <?xml version="1.0" encoding="utf-8"?>
-<root><![CDATA[对不起，你已经达到本主题的回帖上限。<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('对不起，你已经达到本主题的回帖上限。', {});}</script>]]></root>.
-06.28 19:27:42--Successfully find my WaCai link.
-06.28 19:27:42--Successfully find my info link.
-06.28 19:27:43--Successfully get my coin amount: 438.
 
 +++++++++++++++++++++++++++++++++++++++++++++
-++++挖财签到有礼06.28 19:30:03 每天签到得铜钱++++
+++++挖财签到有礼06.29 02:57:03 每天签到得铜钱++++
 +++++++++++++++++++++++++++++++++++++++++++++
-06.28 19:30:19--Successfully login.
-06.28 19:30:19--Successfully find the checkin forum ID.
-06.28 19:30:19--Successfully find the thread ID.
-06.28 19:30:19--Successfully find the key word.
-06.28 19:30:19--Fail to reply: <?xml version="1.0" encoding="utf-8"?>
-<root><![CDATA[对不起，你已经达到本主题的回帖上限。<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('对不起，你已经达到本主题的回帖上限。', {});}</script>]]></root>.
-06.28 19:30:19--Successfully find my WaCai link.
-06.28 19:30:19--Successfully find my info link.
-06.28 19:30:20--Successfully get my coin amount: 438.
+06.29 02:57:19--Successfully login.
+06.29 02:57:19--Successfully find the checkin forum ID.
+06.29 02:57:19--Successfully find the thread ID.
+06.29 02:57:19--Successfully find the key word.
+06.29 02:57:19--Successfully auto reply.
+06.29 02:57:19--Successfully find my WaCai link.
+06.29 02:57:19--Successfully find my info link.
+06.29 02:57:20--Successfully get my coin amount: 463.
 
 +++++++++++++++++++++++++++++++++++++++++++++
-++++挖财签到有礼06.28 19:34:00 每天签到得铜钱++++
+++++挖财签到有礼06.30 13:44:41 每天签到得铜钱++++
 +++++++++++++++++++++++++++++++++++++++++++++
-06.28 19:34:15--Successfully login.
-06.28 19:34:15--Successfully find the checkin forum ID.
-06.28 19:34:15--Successfully find the thread ID.
-06.28 19:34:15--Successfully find the key word.
-06.28 19:34:15--Fail to reply: <?xml version="1.0" encoding="utf-8"?>
-<root><![CDATA[对不起，你已经达到本主题的回帖上限。<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('对不起，你已经达到本主题的回帖上限。', {});}</script>]]></root>.
-06.28 19:34:15--Successfully find my WaCai link.
-06.28 19:34:15--Successfully find my info link.
-06.28 19:34:16--Successfully get my coin amount: 438.
+06.30 13:44:43--Successfully login.
+06.30 13:44:43--Successfully find the checkin forum ID.
+06.30 13:44:44--Successfully find the thread ID.
+06.30 13:44:44--Successfully find the key word.
+06.30 13:44:46--Successfully auto reply.
+06.30 13:44:46--Successfully find my WaCai link.
+06.30 13:44:46--Successfully find my info link.
+06.30 13:44:46--Successfully get my coin amount: 488.
 
++++++++++++++++++++++++++++++++++++++++++++++
+++++挖财签到有礼07.01 03:10:17 每天签到得铜钱++++
++++++++++++++++++++++++++++++++++++++++++++++
+07.01 03:10:33--Successfully login.
+07.01 03:10:33--Successfully find the checkin forum ID.
+07.01 03:10:33--Successfully find the thread ID.
+07.01 03:10:33--Successfully find the key word.
+07.01 03:10:33--Successfully auto reply.
+07.01 03:10:33--Successfully find my WaCai link.
+07.01 03:10:33--Successfully find my info link.
+07.01 03:10:33--Successfully get my coin amount: 513.
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++挖财签到有礼07.02 22:03:14 每天签到得铜钱++++
++++++++++++++++++++++++++++++++++++++++++++++
+07.02 22:03:30--Successfully login.
+07.02 22:03:30--Successfully find the checkin forum ID.
+07.02 22:03:30--Successfully find the thread ID.
+07.02 22:03:30--Successfully find the key word.
+07.02 22:03:31--Successfully auto reply.
+07.02 22:03:31--Successfully find my WaCai link.
+07.02 22:03:31--Successfully find my info link.
+07.02 22:03:31--Successfully get my coin amount: 548.
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++挖财签到有礼07.03 03:10:06 每天签到得铜钱++++
++++++++++++++++++++++++++++++++++++++++++++++
+07.03 03:10:22--Successfully login.
+07.03 03:10:22--Successfully find the checkin forum ID.
+07.03 03:10:22--Successfully find the thread ID.
+07.03 03:10:22--Successfully find the key word.
+07.03 03:10:22--Successfully auto reply.
+07.03 03:10:22--Successfully find my WaCai link.
+07.03 03:10:22--Successfully find my info link.
+07.03 03:10:22--Successfully get my coin amount: 573.
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++挖财签到有礼07.04 02:11:55 每天签到得铜钱++++
++++++++++++++++++++++++++++++++++++++++++++++
+07.04 02:12:15--Successfully login.
+07.04 02:12:15--Successfully find the checkin forum ID.
+07.04 02:12:15--Successfully find the thread ID.
+07.04 02:12:15--Successfully find the key word.
+07.04 02:12:15--Successfully auto reply.
+07.04 02:12:15--Successfully find my WaCai link.
+07.04 02:12:15--Successfully find my info link.
+07.04 02:12:15--Successfully get my coin amount: 598.
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++挖财签到有礼07.05 01:34:05 每天签到得铜钱++++
++++++++++++++++++++++++++++++++++++++++++++++
+07.05 01:34:10--Successfully login.
+07.05 01:34:10--Successfully find the checkin forum ID.
+07.05 01:34:10--Successfully find the thread ID.
+07.05 01:34:10--Successfully find the key word.
+07.05 01:34:10--Successfully auto reply.
+07.05 01:34:10--Successfully find my WaCai link.
+07.05 01:34:10--Successfully find my info link.
+07.05 01:34:10--Successfully get my coin amount: 623.
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++挖财签到有礼07.06 17:45:32 每天签到得铜钱++++
++++++++++++++++++++++++++++++++++++++++++++++
+07.06 17:45:36--Successfully login.
+07.06 17:45:36--Successfully find the checkin forum ID.
+07.06 17:45:36--Successfully find the thread ID.
+07.06 17:45:36--Successfully find the key word.
+07.06 17:45:36--Successfully auto reply.
+07.06 17:45:36--Successfully find my WaCai link.
+07.06 17:45:36--Successfully find my info link.
+07.06 17:45:37--Successfully get my coin amount: 648.
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++挖财签到有礼07.10 14:23:21 每天签到得铜钱++++
++++++++++++++++++++++++++++++++++++++++++++++
+07.10 14:23:22--Successfully find the checkin forum ID.
+07.10 14:23:22--Successfully find the thread ID.
+07.10 14:23:22--Successfully find the key word.
+07.10 14:23:22--Fail to reply: <?xml version="1.0" encoding="utf-8"?>
+<root><![CDATA[对不起，你已经达到本主题的回帖上限。<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('对不起，你已经达到本主题的回帖上限。', {});}</script>]]></root>.
+07.10 14:23:22--Successfully find my WaCai link.
+07.10 14:23:22--Successfully find my info link.
+07.10 14:23:22--Successfully get my coin amount: 714.
+
++++++++++++++++++++++++++++++++++++++++++++++
+++++挖财签到有礼07.10 14:38:28 每天签到得铜钱++++
++++++++++++++++++++++++++++++++++++++++++++++
+07.10 14:38:32--Successfully find the checkin forum ID.
+07.10 14:38:32--Successfully find the thread ID.
+07.10 14:38:32--Successfully find the key word.
+07.10 14:38:32--Fail to reply: <?xml version="1.0" encoding="utf-8"?>
+<root><![CDATA[对不起，你已经达到本主题的回帖上限。<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('对不起，你已经达到本主题的回帖上限。', {});}</script>]]></root>.
+07.10 14:38:33--Successfully find my WaCai link.
+07.10 14:38:33--Successfully find my info link.
+07.10 14:38:33--Successfully get my coin amount: 714.
++++++++++++++++++++++++++++++++++++++++++++++
+++++挖财签到有礼07.10 14:39:05 每天签到得铜钱++++
++++++++++++++++++++++++++++++++++++++++++++++
+07.10 14:39:05--Successfully find the checkin forum ID.
+07.10 14:39:06--Successfully find the thread ID.
+07.10 14:39:06--Successfully find the key word.
+07.10 14:39:06--Fail to reply: <?xml version="1.0" encoding="utf-8"?>
+<root><![CDATA[对不起，你已经达到本主题的回帖上限。<script type="text/javascript" reload="1">if(typeof errorhandle_fastpost=='function') {errorhandle_fastpost('对不起，你已经达到本主题的回帖上限。', {});}</script>]]></root>.
+07.10 14:39:06--Successfully find my WaCai link.
+07.10 14:39:06--Successfully find my info link.
+07.10 14:39:06--Successfully get my coin amount: 714.

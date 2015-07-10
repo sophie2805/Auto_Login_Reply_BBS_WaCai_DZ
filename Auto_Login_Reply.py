@@ -4,11 +4,31 @@
 __author__ = 'Sophie2805'
 
 import re
-import time
+import os.path
+
 import requests
 from bs4 import BeautifulSoup
-import os.path
+
+import time
+import os
 import sys
+
+'''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+if log.txt does not exist under current executing path, create it.
+write log, if the log file is larger than 100 lines, delete all then write from beginning
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'''
+
+file = os.path.abspath('.')+'/log.txt'#get the absolute path of .py executing
+if not os.path.isfile(file):#not exist, create a new one
+    f = open(file,'w')
+    f.close()
+
+if os.path.getsize(file)/1024 > 1024:#larger than 1MB
+    f = open(file,'w')
+    try:
+        f.write('')
+    finally:
+        f.close()
 
 '''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 python Auto_Login_Reply.py user/pwd
@@ -53,7 +73,13 @@ try:
     login_r = s.post(login_url,login_post_data)
 except Exception,e:
     log_list.append(time.strftime("%m.%d %T") + '--Login Exception: '+ e + '.\n')
-#print login_r.content
+
+f = open(file,'a')#append
+try:
+    f.writelines(log_list)
+finally:
+    f.close()
+log_list=[]
 
 '''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 these two get() are very import!!!
@@ -73,7 +99,7 @@ base_url = 'http://bbs.wacai.com/'
 homepage_r = s.get(base_url)
 if '我的挖财' in homepage_r.content:
     log_list.append(time.strftime("%m.%d %T") + '--Successfully login.\n')
-
+#print homepage_r.content
 '''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 find the checkin forum URL and ID, which is used as fid parameter in the reply post URL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'''
@@ -81,19 +107,28 @@ pattern = '<.+>签到有礼<.+>'
 p = re.compile(pattern)
 soup = BeautifulSoup(p.findall(homepage_r.content)[0])
 checkin_postfix = soup.a['href']
-checkin_forum_url = base_url+ checkin_postfix
-#print checkin_forum_url
+checkin_forum_url = checkin_postfix
+#print checkin_postfix
 forum_id = checkin_postfix[checkin_postfix.find('-')+1:checkin_postfix.rfind('-')]
-
+#print forum_id
 if forum_id != '':
     log_list.append(time.strftime("%m.%d %T") + '--Successfully find the checkin forum ID.\n')
+    print '--Successfully find the checkin forum ID'
+    f = open(file,'a')#append
+    try:
+        f.writelines(log_list)
+    finally:
+        f.close()
+    log_list=[]
 
 '''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 get the checkin forum portal page and find today's thread URL and ID, which is used as tid parameter in the reply post URL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'''
 checkin_forum_page=s.get(checkin_forum_url)
+#print checkin_forum_page.content
 #print checkin_forum_page.status_code
-title = '签到有礼'+(time.strftime("%m.%d")+'0').strip('0')+'每天签到得铜钱，每人限回一次'
+title = '签到有礼'+(time.strftime("%m.%d")).lstrip('0')+'每天签到得铜钱，每人限回一次'
+print title;
 pattern_1 = '<.+>'+title + '<.+>'
 p_1 = re.compile(pattern_1)
 soup = BeautifulSoup(p_1.findall(checkin_forum_page.content)[0])
@@ -104,6 +139,12 @@ thread_id= thread_postfix[thread_postfix.find('-')+1:thread_postfix.rfind('-')-2
 
 if thread_id != '':
     log_list.append(time.strftime("%m.%d %T") + '--Successfully find the thread ID.\n')
+    f = open(file,'a')#append
+    try:
+        f.writelines(log_list)
+    finally:
+        f.close()
+    log_list=[]
 t = s.get(thread_url)
 
 '''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -121,6 +162,12 @@ result_3 = re.compile(pattern_3).findall(t.content)
 key = result_3[0][result_3[0].find('>')+1:result_3[0].rfind('<')-1]
 if key != '':
     log_list.append(time.strftime("%m.%d %T") + '--Successfully find the key word.\n')
+    f = open(file,'a')#append
+    try:
+        f.writelines(log_list)
+    finally:
+        f.close()
+    log_list=[]
 
 '''~~~~~~~
 auto reply
@@ -144,7 +191,12 @@ if '非常感谢，回复发布成功，现在将转入主题页，请稍候…�
     log_list.append(time.strftime("%m.%d %T") + '--Successfully auto reply.\n')
 else:
     log_list.append(time.strftime("%m.%d %T") + '--Fail to reply: '+ reply_r.content + '.\n')
-
+f = open(file,'a')#append
+try:
+    f.writelines(log_list)
+finally:
+    f.close()
+log_list=[]
 '''~~~~~~~~~~~~~~
 find my WaCai URL
 ~~~~~~~~~~~~~~~~~'''
@@ -153,7 +205,13 @@ p_4 = re.compile(pattern_4)
 soup = BeautifulSoup(p_4.findall(t.content)[0])
 if soup.a['href'] != '':
     log_list.append(time.strftime("%m.%d %T") + '--Successfully find my WaCai link.\n' )
-mywacai_url = base_url + soup.a['href']
+    f = open(file,'a')#append
+    try:
+        f.writelines(log_list)
+    finally:
+        f.close()
+    log_list=[]
+mywacai_url = soup.a['href']
 mywacai_page = s.get(mywacai_url)
 
 '''~~~~~~~~~~~~~
@@ -164,6 +222,12 @@ p_5 = re.compile(pattern_5)
 soup = BeautifulSoup(p_5.findall(mywacai_page.content)[0])
 if soup.a['href'] != '':
     log_list.append(time.strftime("%m.%d %T") + '--Successfully find my info link.\n' )
+    f = open(file,'a')#append
+    try:
+        f.writelines(log_list)
+    finally:
+        f.close()
+    log_list=[]
 myinfo_url = base_url+ soup.a['href']
 myinfo_page = s.get(myinfo_url)
 
@@ -176,27 +240,9 @@ coin = p_6.findall(myinfo_page.content)[0]
 coin = coin[coin.find('</em>')+5:coin.find('</li>')]
 if int(coin.strip()) != 0:
     log_list.append(time.strftime("%m.%d %T") + '--Successfully get my coin amount: %s.\n'% int(coin.strip()))
-log_list.append('\n')
-
-'''~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-if log.txt does not exist under current executing path, create it.
-write log, if the log file is larger than 100 lines, delete all then write from beginning
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'''
-
-file = os.path.abspath('.')+'/log.txt'#get the absolute path of .py executing
-if not os.path.isfile(file):#not exist, create a new one
-    f = open(file,'w')
-    f.close()
-
-if os.path.getsize(file)/1024 > 1024:#larger than 1MB
-    f = open(file,'w')
+    f = open(file,'a')#append
     try:
-        f.write('')
+        f.writelines(log_list)
     finally:
         f.close()
-
-f = open(file,'a')#append
-try:
-    f.writelines(log_list)
-finally:
-    f.close()
+    log_list=[]
